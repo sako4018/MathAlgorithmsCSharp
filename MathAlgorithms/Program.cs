@@ -1,0 +1,39 @@
+namespace MathAlgorithms
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("Избери задача:");
+                Console.WriteLine("1. Квадрати на числа");
+                Console.WriteLine("2. Фибоначи");
+                Console.WriteLine("3. НОД (Алгоритъм на Евклид)");
+                Console.WriteLine("0. Изход");
+                Console.Write("Твой избор: ");
+
+                string choice = Console.ReadLine()!;
+                Console.WriteLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        Squares.Run();
+                        break;
+                    case "2":
+                        Fibonacci.Run();
+                        break;
+                    case "3":
+                        GCD.Run();
+                        break;
+                    case "0":
+                        return;
+                    default:
+                        Console.WriteLine("Невалиден избор!\n");
+                        break;
+                }
+            }
+        }
+    }
+}
