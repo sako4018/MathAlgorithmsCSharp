@@ -17,6 +17,7 @@ namespace MathAlgorithms
                 Console.WriteLine("8. Събиране на делители");
                 Console.WriteLine("9. Перфектно число");
                 Console.WriteLine("10. Конвертиране на бройни системи");
+                Console.WriteLine("11. Валидиране на скоби");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -54,6 +55,9 @@ namespace MathAlgorithms
                         break;
                     case "10":
                         NumberBaseConversion.Run();
+                        break;
+                    case "11":
+                        BracketValidator.Run();
                         break;
                     case "0":
                         return;
