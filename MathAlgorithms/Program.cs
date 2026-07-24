@@ -20,6 +20,7 @@ namespace MathAlgorithms
                 Console.WriteLine("11. Валидиране на скоби");
                 Console.WriteLine("12. RPN изчисляване");
                 Console.WriteLine("13. Конвертиране в RPN");
+                Console.WriteLine("14. Квадратно уравнение");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -66,6 +67,9 @@ namespace MathAlgorithms
                         break;
                     case "13":
                         InfixToRPN.Run();
+                        break;
+                    case "14":
+                        QuadraticEquation.Run();
                         break;
                     case "0":
                         return;
