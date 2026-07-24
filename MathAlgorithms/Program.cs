@@ -15,6 +15,7 @@ namespace MathAlgorithms
                 Console.WriteLine("6. НОК (Най-малко общо кратно)");
                 Console.WriteLine("7. Просто число");
                 Console.WriteLine("8. Събиране на делители");
+                Console.WriteLine("9. Перфектно число");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -46,6 +47,9 @@ namespace MathAlgorithms
                         break;
                     case "8":
                         SumOfDivisors.Run();
+                        break;
+                    case "9":
+                        PerfectNumber.Run();
                         break;
                     case "0":
                         return;
