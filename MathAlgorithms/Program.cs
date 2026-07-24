@@ -26,6 +26,7 @@ namespace MathAlgorithms
                 Console.WriteLine("17. Генеричен стек");
                 Console.WriteLine("18. Power of Two");
                 Console.WriteLine("19. Следващо по-голямо число");
+                Console.WriteLine("20. Задачата на Йосиф");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -90,6 +91,9 @@ namespace MathAlgorithms
                         break;
                     case "19":
                         NextGreaterNumber.Run();
+                        break;
+                    case "20":
+                        JosephusProblem.Run();
                         break;
                     case "0":
                         return;
