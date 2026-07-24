@@ -14,6 +14,7 @@ namespace MathAlgorithms
                 Console.WriteLine("5. Палиндром");
                 Console.WriteLine("6. НОК (Най-малко общо кратно)");
                 Console.WriteLine("7. Просто число");
+                Console.WriteLine("8. Събиране на делители");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -42,6 +43,9 @@ namespace MathAlgorithms
                         break;
                     case "7":
                         PrimeNumber.Run();
+                        break;
+                    case "8":
+                        SumOfDivisors.Run();
                         break;
                     case "0":
                         return;
