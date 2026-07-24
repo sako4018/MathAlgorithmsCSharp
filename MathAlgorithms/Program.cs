@@ -18,6 +18,7 @@ namespace MathAlgorithms
                 Console.WriteLine("9. Перфектно число");
                 Console.WriteLine("10. Конвертиране на бройни системи");
                 Console.WriteLine("11. Валидиране на скоби");
+                Console.WriteLine("12. RPN изчисляване");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -58,6 +59,9 @@ namespace MathAlgorithms
                         break;
                     case "11":
                         BracketValidator.Run();
+                        break;
+                    case "12":
+                        RPNEvaluator.Run();
                         break;
                     case "0":
                         return;
