@@ -11,6 +11,7 @@ namespace MathAlgorithms
                 Console.WriteLine("2. Фибоначи");
                 Console.WriteLine("3. НОД (Алгоритъм на Евклид)");
                 Console.WriteLine("4. Факториел");
+                Console.WriteLine("5. Палиндром");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -30,6 +31,9 @@ namespace MathAlgorithms
                         break;
                     case "4":
                         Factorial.Run();
+                        break;
+                    case "5":
+                        Palindrome.Run();
                         break;
                     case "0":
                         return;
