@@ -12,6 +12,7 @@ namespace MathAlgorithms
                 Console.WriteLine("3. НОД (Алгоритъм на Евклид)");
                 Console.WriteLine("4. Факториел");
                 Console.WriteLine("5. Палиндром");
+                Console.WriteLine("6. НОК (Най-малко общо кратно)");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -34,6 +35,9 @@ namespace MathAlgorithms
                         break;
                     case "5":
                         Palindrome.Run();
+                        break;
+                    case "6":
+                        LCM.Run();
                         break;
                     case "0":
                         return;
