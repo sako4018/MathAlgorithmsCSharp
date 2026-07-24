@@ -10,6 +10,7 @@ namespace MathAlgorithms
                 Console.WriteLine("1. Квадрати на числа");
                 Console.WriteLine("2. Фибоначи");
                 Console.WriteLine("3. НОД (Алгоритъм на Евклид)");
+                Console.WriteLine("4. Факториел");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -26,6 +27,9 @@ namespace MathAlgorithms
                         break;
                     case "3":
                         GCD.Run();
+                        break;
+                    case "4":
+                        Factorial.Run();
                         break;
                     case "0":
                         return;
