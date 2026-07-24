@@ -25,6 +25,7 @@ namespace MathAlgorithms
                 Console.WriteLine("16. Матрица умножение");
                 Console.WriteLine("17. Генеричен стек");
                 Console.WriteLine("18. Power of Two");
+                Console.WriteLine("19. Следващо по-голямо число");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -86,6 +87,9 @@ namespace MathAlgorithms
                         break;
                     case "18":
                         PowerOfTwo.Run();
+                        break;
+                    case "19":
+                        NextGreaterNumber.Run();
                         break;
                     case "0":
                         return;
