@@ -21,6 +21,7 @@ namespace MathAlgorithms
                 Console.WriteLine("12. RPN изчисляване");
                 Console.WriteLine("13. Конвертиране в RPN");
                 Console.WriteLine("14. Квадратно уравнение");
+                Console.WriteLine("15. Големи числа факториел");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -70,6 +71,9 @@ namespace MathAlgorithms
                         break;
                     case "14":
                         QuadraticEquation.Run();
+                        break;
+                    case "15":
+                        BigNumberFactorial.Run();
                         break;
                     case "0":
                         return;
