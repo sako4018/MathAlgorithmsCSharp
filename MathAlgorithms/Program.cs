@@ -16,6 +16,7 @@ namespace MathAlgorithms
                 Console.WriteLine("7. Просто число");
                 Console.WriteLine("8. Събиране на делители");
                 Console.WriteLine("9. Перфектно число");
+                Console.WriteLine("10. Конвертиране на бройни системи");
                 Console.WriteLine("0. Изход");
                 Console.Write("Твой избор: ");
 
@@ -50,6 +51,9 @@ namespace MathAlgorithms
                         break;
                     case "9":
                         PerfectNumber.Run();
+                        break;
+                    case "10":
+                        NumberBaseConversion.Run();
                         break;
                     case "0":
                         return;
