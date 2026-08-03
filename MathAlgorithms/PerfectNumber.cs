@@ -19,18 +19,7 @@ namespace MathAlgorithms
 
             for (int n = 2; n <= limit; n++)
             {
-                int sum = 1;
-                for (int i = 2; i * i <= n; i++)
-                {
-                    if (n % i == 0)
-                    {
-                        sum += i;
-                        if (i != n / i)
-                            sum += n / i;
-                    }
-                }
-
-                if (sum == n)
+                if (IsPerfectNumber(n))
                 {
                     Console.Write($"{n} ");
                     count++;
@@ -42,6 +31,29 @@ namespace MathAlgorithms
 
             Console.WriteLine($"\nНамерени: {count} перфектни числа");
             Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Проверява дали числото е перфектно.
+        /// Перфектно число = сумата на делителите му (без самото число) = самото число.
+        /// </summary>
+        public static bool IsPerfectNumber(int n)
+        {
+            if (n < 2)
+                return false;
+
+            int sum = 1;
+            for (int i = 2; i * i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    sum += i;
+                    if (i != n / i)
+                        sum += n / i;
+                }
+            }
+
+            return sum == n;
         }
     }
 }
