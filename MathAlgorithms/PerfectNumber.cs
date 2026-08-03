@@ -14,22 +14,15 @@ namespace MathAlgorithms
             Console.Write("Намери перфектни числа до: ");
             int limit = int.Parse(Console.ReadLine()!);
 
+            int[] perfectNumbers = FindPerfectNumbers(limit);
+
             Console.Write($"Перфектни числа до {limit}: ");
-            int count = 0;
-
-            for (int n = 2; n <= limit; n++)
-            {
-                if (IsPerfectNumber(n))
-                {
-                    Console.Write($"{n} ");
-                    count++;
-                }
-            }
-
-            if (count == 0)
+            if (perfectNumbers.Length == 0)
                 Console.WriteLine("няма перфектни числа");
+            else
+                Console.WriteLine(string.Join(" ", perfectNumbers));
 
-            Console.WriteLine($"\nНамерени: {count} перфектни числа");
+            Console.WriteLine($"\nНамерени: {perfectNumbers.Length} перфектни числа");
             Console.WriteLine();
         }
 
@@ -54,6 +47,22 @@ namespace MathAlgorithms
             }
 
             return sum == n;
+        }
+
+        /// <summary>
+        /// Намира всички перфектни числа до limit (включително).
+        /// </summary>
+        public static int[] FindPerfectNumbers(int limit)
+        {
+            List<int> perfectNumbers = new List<int>();
+
+            for (int n = 2; n <= limit; n++)
+            {
+                if (IsPerfectNumber(n))
+                    perfectNumbers.Add(n);
+            }
+
+            return perfectNumbers.ToArray();
         }
     }
 }
