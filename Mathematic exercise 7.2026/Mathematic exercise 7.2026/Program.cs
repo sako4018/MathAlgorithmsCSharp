@@ -129,6 +129,15 @@ namespace Mathematic_exercise_7._2026
     {
         static void Main(string[] args)
         {
+            // Задача 7: Перфектно число — намери всички перфектни числа до 10000
+            int limit = 10000;
+            int[] perfectNumbers = FindPerfectNumbers(limit);
+
+            Console.Write($"Перфектни числа до {limit}: ");
+            if (perfectNumbers.Length == 0)
+                Console.WriteLine("няма");
+            else
+                Console.WriteLine(string.Join(", ", perfectNumbers));
         }
 
         /// <summary>
@@ -152,6 +161,22 @@ namespace Mathematic_exercise_7._2026
             }
 
             return sum == n;
+        }
+
+        /// <summary>
+        /// Намира всички перфектни числа до limit (включително).
+        /// </summary>
+        static int[] FindPerfectNumbers(int limit)
+        {
+            List<int> perfectNumbers = new List<int>();
+
+            for (int n = 2; n <= limit; n++)
+            {
+                if (IsPerfectNumber(n))
+                    perfectNumbers.Add(n);
+            }
+
+            return perfectNumbers.ToArray();
         }
     }
 }
