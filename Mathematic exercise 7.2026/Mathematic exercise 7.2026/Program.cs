@@ -129,7 +129,6 @@ namespace Mathematic_exercise_7._2026
     {
         static void Main(string[] args)
         {
-            // Задача 7: Перфектно число — намери всички перфектни числа до 10000
             int limit = 10000;
             int[] perfectNumbers = FindPerfectNumbers(limit);
 
