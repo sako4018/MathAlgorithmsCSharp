@@ -159,13 +159,14 @@ namespace Mathematic_exercise_7._2026
                         sum += n / i;
                 }
             }
-
+            //
+            // Проверка дали сумата на делителите (без самото число) е равна на самото число
             return sum == n;
         }
 
         /// <summary>
-        /// Намира всички перфектни числа до limit (включително).
-        /// </summary>
+        /// 
+        /// /// </summary>
         static int[] FindPerfectNumbers(int limit)
         {
             List<int> perfectNumbers = new List<int>();
