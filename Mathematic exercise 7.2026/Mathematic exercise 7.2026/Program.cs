@@ -140,12 +140,6 @@ namespace Mathematic_exercise_7._2026
         }
 
         /// <summary>
-
-
-
-
-
-
         /// </summary>
         static bool IsPerfectNumber(int n)
         {
