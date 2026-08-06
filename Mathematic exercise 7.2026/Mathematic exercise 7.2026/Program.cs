@@ -174,5 +174,11 @@ namespace Mathematic_exercise_7._2026
 
             return perfectNumbers.ToArray();
         }
+        static int[] AddNumbers(int )
+        {
+            int a = 1;
+            int b = 2;
+            int result = a + b;
+        }
     }
 }
