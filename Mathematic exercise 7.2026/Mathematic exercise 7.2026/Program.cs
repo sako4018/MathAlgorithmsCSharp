@@ -140,7 +140,12 @@ namespace Mathematic_exercise_7._2026
         }
 
         /// <summary>
-        /// /// Пример: 6 → 1+2+3 = 6 ✓
+
+
+
+
+
+
         /// </summary>
         static bool IsPerfectNumber(int n)
         {
