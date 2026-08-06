@@ -139,9 +139,6 @@ namespace Mathematic_exercise_7._2026
             else
                 Console.WriteLine(string.Join(", ", perfectNumbers));
         }
-
-        /// <summary>
-        /// </summary>
         static bool IsPerfectNumber(int n)
         {
             if (n < 2)
