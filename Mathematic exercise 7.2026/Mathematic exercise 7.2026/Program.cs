@@ -117,7 +117,6 @@ namespace Mathematic_exercise_7._2026
 // N души стоят в кръг. Всеки k-ти отпада.
 // Кой е последният оцелял? (Задачата на Йосиф)
 // Пример: N=7, k=3 → 4
-
 ---
 Как да ги решаваш
 
@@ -125,6 +124,8 @@ namespace Mathematic_exercise_7._2026
 2. Мислиш 5-10 минути на хартия
 3. Пишеш решението на C#
 4. Тестваш с примери*/
+
+
     internal class Program
     {
         static void Main(string[] args)
